@@ -1,0 +1,67 @@
+{
+  "project_info": {
+    "project_number": "402111923276",
+    "project_id": "liveasy001",
+    "storage_bucket": "liveasy001.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:402111923276:android:9dff6e68598334da3060e9",
+        "android_client_info": {
+          "package_name": "com.company.liveasy"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB7rJnfWDh6F34A6A0huPRvNjpmg-8Ow1g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:402111923276:android:cb35d84dc5bfd59e3060e9",
+        "android_client_info": {
+          "package_name": "com.example.liveasy"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB7rJnfWDh6F34A6A0huPRvNjpmg-8Ow1g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:402111923276:android:5dfae44efe626fe23060e9",
+        "android_client_info": {
+          "package_name": "com.example.playmusic"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB7rJnfWDh6F34A6A0huPRvNjpmg-8Ow1g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
