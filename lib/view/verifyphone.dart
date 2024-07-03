@@ -190,7 +190,33 @@ class _VerifyOtpState extends State<VerifyOtp> {
                     ),
                   ),
                 ),
-              )
+              ),
+              Spacer(),
+              Align(
+                alignment: Alignment.bottomCenter,
+                child: Container(
+                  height: 160,
+                  width: screenWidth,
+                  child: Stack(
+                    children: [
+                      Container(
+                          height: 200,
+                          width: screenWidth,
+                          child: Image.asset(
+                            "assets/mobi1.png",
+                            height: 200,
+                          )),
+                      Container(
+                          height: 200,
+                          width: screenWidth,
+                          child: Image.asset(
+                            "assets/mobi2.png",
+                            height: 200,
+                          )),
+                    ],
+                  ),
+                ),
+              ),
       
             ],
           ),
