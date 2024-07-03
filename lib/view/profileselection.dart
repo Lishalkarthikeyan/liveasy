@@ -77,7 +77,8 @@ class _ProfileSelectionState extends State<ProfileSelection> {
                       margin: EdgeInsets.only(left: 20),
                       height: 40,
                       width: 40,
-                      child: Image.asset("assets/shipper.png", fit: BoxFit.cover),
+                      child:
+                      Image.asset("assets/shipper.png", fit: BoxFit.cover),
                     ),
                     SizedBox(
                       width: 10,
@@ -159,7 +160,8 @@ class _ProfileSelectionState extends State<ProfileSelection> {
                       margin: EdgeInsets.only(left: 20),
                       height: 25,
                       width: 40,
-                      child: Image.asset("assets/transport.png", fit: BoxFit.cover),
+                      child: Image.asset("assets/transport.png",
+                          fit: BoxFit.cover),
                     ),
                     SizedBox(
                       width: 10,

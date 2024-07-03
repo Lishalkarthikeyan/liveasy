@@ -1,4 +1,6 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:liveasy/view/mobilenumber.dart';
 
 class FramePage extends StatefulWidget {
@@ -15,12 +17,11 @@ class _FramePageState extends State<FramePage> {
     final screenWidth = MediaQuery.of(context).size.width;
     return SafeArea(
       child: Scaffold(
-          body: SingleChildScrollView(
-            child: Container(
-                    height: screenHeight,
-                    width: screenWidth,
-                    color: Colors.white,
-                    child: Column(children: [
+          body:  Container(
+          height: screenHeight,
+          width: screenWidth,
+          color: Colors.white,
+          child: Column(children: [
             Padding(
               padding: EdgeInsets.only(top: 128, left: 152, right: 152),
               child: Container(
@@ -58,22 +59,28 @@ class _FramePageState extends State<FramePage> {
                 width: screenWidth,
                 child: Column(
                   children: [
-                    Text(
-                      "You can change the language",
-                      style: TextStyle(
-                        color: Color.fromRGBO(106, 108, 123, 1),
-                        fontSize: 14,
-                        fontWeight: FontWeight.w400,
-                        fontFamily: "Roboto",
+                    FittedBox(
+                      fit: BoxFit.scaleDown,
+                      child: Text(
+                        "You can change the language",
+                        style: TextStyle(
+                          color: Color.fromRGBO(106, 108, 123, 1),
+                          fontSize: 14,
+                          fontWeight: FontWeight.w400,
+                          fontFamily: "Roboto",
+                        ),
                       ),
                     ),
-                    Text(
-                      "at any time.",
-                      style: TextStyle(
-                        color: Color.fromRGBO(106, 108, 123, 1),
-                        fontSize: 14,
-                        fontWeight: FontWeight.w400,
-                        fontFamily: "Roboto",
+                    FittedBox(
+                      fit: BoxFit.scaleDown,
+                      child: Text(
+                        "at any time.",
+                        style: TextStyle(
+                          color: Color.fromRGBO(106, 108, 123, 1),
+                          fontSize: 14,
+                          fontWeight: FontWeight.w400,
+                          fontFamily: "Roboto",
+                        ),
                       ),
                     ),
                   ],
@@ -89,8 +96,8 @@ class _FramePageState extends State<FramePage> {
               width: 216,
               decoration: BoxDecoration(
                   shape: BoxShape.rectangle,
-                  border:
-                      Border.all(color: Color.fromARGB(47, 48, 55, 1), width: 1)),
+                  border: Border.all(
+                      color: Color.fromARGB(47, 48, 55, 1), width: 1)),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
@@ -181,9 +188,9 @@ class _FramePageState extends State<FramePage> {
                 ],
               ),
             ),
-                    ]),
-                  ),
-          )),
+          ]),
+        ),
+      )
     );
   }
 }

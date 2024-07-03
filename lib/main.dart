@@ -5,8 +5,14 @@ import 'package:flutter/material.dart';
 import 'package:liveasy/view/frame.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'firebase_options.dart';
+import 'package:flutter/services.dart';
+
 
 void main() async {
+  SystemChrome.setPreferredOrientations([
+    DeviceOrientation.portraitUp,
+    DeviceOrientation.portraitDown,
+  ]);
   WidgetsFlutterBinding.ensureInitialized();
 
   await Firebase.initializeApp(
@@ -64,15 +70,11 @@ class _MyAppState extends State<MyApp> {
                 height: (height = height),
                 color: Colors.black,
                 child: AnimatedSplashScreen(
+                  splashIconSize: 2000,
                   nextScreen: isLoggedIn ?? false ? FramePage() : FramePage(),
                   splash:
-                  Text(
-                    "liveasy",
-                    style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 70,
-                        fontWeight: FontWeight.w700,
-                        fontStyle: FontStyle.italic),
+                  Image.asset(
+                    "assets/splash.png",
                   ),
 
                   backgroundColor: Colors.black,
