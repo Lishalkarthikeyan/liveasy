@@ -157,7 +157,7 @@ class _MobileNumberState extends State<MobileNumber> {
                   final phoneNumber = _phoneController.text.trim();
                   if (phoneNumber.isNotEmpty) {
                     clear();
-                    Navigator.pushReplacement(
+                    Navigator.push(
                       context,
                       MaterialPageRoute(
                         builder: (context) => VerifyOtp(phoneNumber: phoneNumber),
