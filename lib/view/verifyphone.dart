@@ -118,9 +118,9 @@ class _VerifyOtpState extends State<VerifyOtp> {
                   });
                 },
                 otpFieldStyle: OtpFieldStyle(
-                  backgroundColor: Color.fromARGB(255, 129, 218, 245),
-                  focusBorderColor: Color.fromARGB(255, 129, 218, 245),
-                  enabledBorderColor: Color.fromARGB(255, 129, 218, 245),
+                  backgroundColor: Color.fromRGBO(147,210,243,1),
+                  focusBorderColor:Color.fromRGBO(147,210,243,1),
+                  enabledBorderColor:Color.fromRGBO(147,210,243,1),
                 ),
               ),
               SizedBox(height: 15),
