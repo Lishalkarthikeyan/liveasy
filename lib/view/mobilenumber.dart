@@ -29,6 +29,7 @@ class _MobileNumberState extends State<MobileNumber> {
     final screenHeight = MediaQuery.of(context).size.height;
     return SafeArea(
       child: Scaffold(
+        resizeToAvoidBottomInset: true,
         appBar: AppBar(
           backgroundColor: Colors.white,
           iconTheme: IconThemeData(

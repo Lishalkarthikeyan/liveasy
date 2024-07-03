@@ -17,6 +17,7 @@ class _ProfileSelectionState extends State<ProfileSelection> {
     final double screenWidth = MediaQuery.of(context).size.width;
     return SafeArea(
       child: Scaffold(
+        resizeToAvoidBottomInset: true,
         appBar: AppBar(
           backgroundColor: Colors.white,
         ),

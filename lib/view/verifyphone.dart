@@ -58,6 +58,7 @@ class _VerifyOtpState extends State<VerifyOtp> {
     final screenHeight = MediaQuery.of(context).size.height;
     return SafeArea(
       child: Scaffold(
+        resizeToAvoidBottomInset: true,
         appBar: AppBar(backgroundColor: Colors.white,),
         body: Container(
           color: Colors.white,
